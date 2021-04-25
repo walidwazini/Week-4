@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+/* All the div inside #para and all the p inside it -- ascentor selector*/
+        #para div p {
+            background-color: forestgreen;
+        }
+/* all the div inside para and p directly inside it -- child selector*/
+        #para div > p {
+            background-color: yellow;
+        }
+
+/* All the div inside #para and p as next siubling if the div- adjacent sibling selector*/
+        #para div + p {
+            background-color: palevioletred;
+        }
+
+/* sibling selector*/
+        #para div ~ p {
+            background-color: rebeccapurple;
+        }
+    </style>
+    <title>Selector</title>
+</head>
+<body>
+    <div id="para">
+        <div>
+            <p>Paragraph 1</p>
+            <p>Paragraph 2 in the div</p>
+            <span><p>Paragraph 1</p> </span>
+            <p>Paragraph 4 in the div</p>
+            <p>Paragraph 1</p>
+        </div>
+    </div>
+</body>
+</html>
